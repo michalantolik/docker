@@ -79,7 +79,10 @@
 ## Docker Desktop - Installation
 - Make sure that your computer OS allows you to run Docker for Windows
 - Enable BIOS level hardware virtualization in BIOS settings
-- Download Docker Desktop from website and install or `choco install docker-desktop`
+- Download Docker Desktop from website and install or run `choco install docker-desktop`
+- Restart PC and run Docker Desktop
+- Install WSL 2 Linux kernel if prompted *(Windows Subsystem for Linux)*
+  - https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 - Login with Docker ID
 - See https://docs.docker.com/
 
