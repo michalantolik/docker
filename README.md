@@ -3,6 +3,7 @@
 ## Docker - Resources
 - https://www.docker.com/
 - https://docs.docker.com/
+- https://learn.microsoft.com/en-us/virtualization/windowscontainers/
 - https://www.linkedin.com/learning/docker-for-windows/
 
 ## Docker is an open source platform for container management
@@ -83,8 +84,30 @@
 - Restart PC and run Docker Desktop
 - Install WSL 2 Linux kernel if prompted *(Windows Subsystem for Linux)*
   - https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+- Restart Docker Desktop if prompted
 - Login with Docker ID
 - See https://docs.docker.com/
 
-## Docker Kitematic
-- GUI tool for downloading, running and administration of containers
+## Kubernetes
+
+**Kubernetes - History**
+- Around 1999 Google was already running their services in containers (search engine, gmail)
+- Google created Borg -> Omega -> Kubernetes (open source)
+- "Kubernetes" means "Helmsman" in Greek
+
+**Docker VS Kubernetes**
+- Docker cares about low-level stuff: start/stop/delete containers
+- Kubernetes cares about high-level stuff: schedule/scale/heal/update ...
+- ... **it is an orchestration tool**
+- ... it orchestrates nodes and tells Container Runtime (Docker instance) when to start/stop/delete containers
+
+**Kubernetes - Node**
+- Container Runtime
+- Kubernetes Agent
+
+## Docker - Basic commands
+```bash
+# Show help
+
+docker
+```
